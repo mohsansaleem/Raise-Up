@@ -1,0 +1,17 @@
+Steps:
+
+* Add Prefab of UI in Appropriate Directory.
+  Suggested Hierarchy: /Resources/Prefabs/UI/[UI Name]/[Prefab Name]
+  
+* Apply a Tag to the UI
+
+* Add Tag and UI Prefab path to the Constants File.
+
+* Create the Handler for the UI and inherit it from Widget<[Handler Name]>
+  Suggested Hierarchy: /Scripts/UI/[UI Name]/[Script Name]
+  Suggested namespace: Game.UI
+
+* Add enum for the UI to the Enums.cs:GameUI
+
+* Add Switch Case in UIManager.cs:UI_SELECTION region.
+
